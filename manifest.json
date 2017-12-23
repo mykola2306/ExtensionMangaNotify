@@ -1,0 +1,21 @@
+{
+    "name": "Manga - Notify Me",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "Tired of manually checking website for new manga chapter? Then this extension is for you. You will be notified when a new chapter is released.",
+    "icons": {
+        "128": "unnamed1.png"
+    },
+
+    "browser_action": {
+        "default_title": "Manga - Notify Me",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["jquery-3.2.1.min.js", "eventPage.js", "popup.js"],
+        "persistent": false
+    },
+
+    "permissions": ["http://*/*", "https://*/*", "alarms", "background", "tabs", "management", "notifications"]
+}

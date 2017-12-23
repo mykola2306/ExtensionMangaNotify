@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Where does this show</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Manga</h1>
+    <!--
+    <input type="button" value="Click me">
+    <h3>=Tales of Demons and Gods=</h3>
+    <ul id="TDGlist"></ul>
+-->
+    <!--    <a href="https://jaiminisbox.com/reader/series/one-piece-2">adsf</a>-->
+    <!--    TDG     -->
+    <div id="container">
+        <div class="gif TDG">
+            <div class="containerGif">
+                <img class="loader" src="giphy.gif">
+                <h2>Loading!</h2>
+            </div>
+        </div>
+        <img class="logo" src="TDG.png">
+        <h1>=TDG= <i class="TDG fa fa-pencil-square-o" aria-hidden="true"></i></h1>
+        <input class="addToListTDG" type="text" placeholder="+ Add new To Do">
+        <ul class="TDGchapterList"></ul>
+    </div>
+    <!--    OP     -->
+    <div id="container">
+        <div class="gif OP">
+            <div class="containerGif">
+                <img class="loader" src="giphy.gif">
+                <h2>Loading!</h2>
+            </div>
+        </div>
+        <img class="logo" src="OnePieceLogo.png">
+        <h1>=One Piece= <i class="OP fa fa-pencil-square-o" aria-hidden="true"></i></h1>
+        <input class="addToListOP" type="text" placeholder="+ Add new To Do">
+        <ul class="OPchapterList"></ul>
+    </div>
+    <!--    OPM     -->
+    <div id="container">
+        <div class="gif OPM">
+            <div class="containerGif">
+                <img class="loader" src="giphy.gif">
+                <h2>Loading!</h2>
+            </div>
+        </div>
+        <img class="logo" src="OPM22.png">
+        <h1>=One Punch Man= <i class="OPM fa fa-pencil-square-o" aria-hidden="true"></i></h1>
+        <input class="addToListOPM" type="text" placeholder="+ Add new To Do">
+        <ul class="OPMchapterList"></ul>
+    </div>
+    <!--    AOT     -->
+    <div id="container">
+        <div class="gif AOT">
+            <div class="containerGif">
+                <img class="loader" src="giphy.gif">
+                <h2>Loading!</h2>
+            </div>
+        </div>
+        <img class="logo" src="AOT1.png">
+        <h1>=Attack on Titan= <i class="AOT fa fa-pencil-square-o" aria-hidden="true"></i></h1>
+        <input class="addToListAOT" type="text" placeholder="+ Add new To Do">
+        <ul class="AOTchapterList"></ul>
+    </div>
+    <button class="refresh">Refresh</button>
+    <button id="alarmOff" class="reset">RESET</button>
+
+
+    <div class="setup">
+        <div class="setupContent">
+            <h1>One time setup</h1>
+            <h2>Hi,<br> i hope you enjoy this extension</h2>
+            <p class="p">Latest chapter will be added for each Manga</p>
+            <div class="descrption">
+                <div class="clearfix">
+                    <img src="iconDel.bmp">
+                    <p class="itemDescription">Use this button to delete a chapter you have alread finished reading</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img src="iconOpen.bmp">
+                    <p class="itemDescription">Use this button to open the selected chapter in a new tab</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img src="iconClick1.png">
+                    <p class="itemDescription">Clicking on the selected chapter crosses it out, marking it is read</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img src="iconLogo.png">
+                    <p class="itemDescription">By clicking on the extension icon in the browser, the extension checks for new chapters. The extension also checks automatically every hour if there are new chapters</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img src="iconUnread.png">
+                    <p class="itemDescription">A number is displayed beside the extension icon indicating number of unread manga chapters</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img class="iconWider" src="iconNotify2.png">
+                    <p class="itemDescription">After the 'One time setup', a notification will be displayed for new chapters</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img src="iconRefresh.bmp">
+                    <p class="itemDescription">Click this button to manully check if there are any new manga Chapters</p>
+                </div>
+                <hr>
+                <div class="clearfix">
+                    <img src="iconReset.bmp">
+                    <p class="itemDescription">Clicking this button will delete all user data and reset the extension</p>
+                </div>
+            </div>
+        </div>
+        <button id="alarmOn" class="confirm" onclick="topFunction()">CONFIRM</button>
+    </div>
+    <script src="popup.js"></script>    
+    <script type="text/javascript" src="todos.js"></script>
+
+</body>
+
+</html>
